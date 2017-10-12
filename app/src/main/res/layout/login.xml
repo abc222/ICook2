@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!--android:background="@drawable/login_background"-->
+    <!-- padding 内边距   layout_margin 外边距
+  		android:layout_alignParentTop 布局的位置是否处于顶部 -->
+    <LinearLayout
+        android:id="@+id/login_or_register_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ICook"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="40dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <!--输入账号框-->
+            <LinearLayout
+                android:id="@+id/input_account_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/login_user" />
+
+                <EditText
+                    android:id="@+id/input_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textSize="17dp" />
+
+                <!--设置账号只能为数字
+                 android:inputType="numberDecimal"
+                 -->
+                <!--设置没有EditText下划线
+                android:background="@null"-->
+
+            </LinearLayout>
+
+
+            <!--输入密码框-->
+            <LinearLayout
+                android:id="@+id/input_password__linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/input_account_linear_layout"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:src="@mipmap/login_password" />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/input_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textColorHint="@color/white"
+                    android:textSize="17dp" />
+                <!--android:background="@null"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/remember_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记住密码"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textColorLink="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--点击登录按钮-->
+        <LinearLayout
+            android:id="@+id/login_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_marginLeft="60dp"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="20dp"
+                android:background="@drawable/login_login"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新用户注册"
+            android:textSize="20dp"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="230dp"/>
+
+    </LinearLayout>
+</LinearLayout>

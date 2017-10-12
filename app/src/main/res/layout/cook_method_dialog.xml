@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.猪肉切丝用黑胡椒、淀粉、生抽腌制一刻钟"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_margin="15dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.所有配料切成丝备用"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_margin="15dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.锅里倒油加热放入蒜末、老干妈豆豉煸炒出香味"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_margin="15dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.先将浆好的肉丝倒入锅中煸炒然后倒入其他配料一起煸炒，放入适量的盐，加入白糖和香醋煸炒一会就可以出锅了"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_margin="15dp"/>
+</LinearLayout>
